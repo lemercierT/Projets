@@ -1,8 +1,7 @@
 import { Client } from "./Client.class";
 import { MatchClient } from "./MatchClient.class";
 
-let client = new Client(["IDFRALEMERCIER<<<<<<<<<<<<<<<<057042", 
-                         "1811579505934THIBAULT<<DANI0302209M1"]);
+let client = new Client(["bande carte id"]);
 
 const logs = client.genereLogs();
 console.log(logs);

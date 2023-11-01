@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "mrz": "^3.4.0",
-    "mysql2": "^3.6.2",
-    "tesseract.js": "^5.0.3"
-  }
-}

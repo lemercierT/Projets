@@ -8,8 +8,7 @@ import { MatchClient } from "./MatchClient.class";
 
 //let db = new ConnectSQL("localhost", "root", "", "db_myscanner");
 
-let decrypt_idCard = new DecryptMRZ( ["IDFRALEMERCIER<<<<<<<<<<<<<<<<057042", 
-                                      "1811579505934THIBAULT<<DANI0302209M1"]);
+let decrypt_idCard = new DecryptMRZ( ["bande carte id"]);
 
 let info_thibault = new Map();
 info_thibault = decrypt_idCard.decryptMRZ();
@@ -37,8 +36,7 @@ info_anna.forEach(value => {
     console.log(value);
 })
 
-let client: Client = new Client(["IDFRALEMERCIER<<<<<<<<<<<<<<<<057042", 
-                                 "1811579505934THIBAULT<<DANI0302209M1"]);
+let client: Client = new Client(["bande carte id"]);
 console.log("CLIENT: " + client.genereLogs());
 
 let client1: MatchClient = new MatchClient(client);
