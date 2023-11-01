@@ -1,0 +1,31 @@
+[Tue Oct 11 07:52:38.113333 2022] [php7:error] [pid 14171] [client 100.64.48.89:33052] script '/home/alice/PHP/TD4.sites.php' not found or unable to stat
+[Tue Oct 11 08:06:36.498332 2022] [php7:error] [pid 23029] [client 100.64.48.72:51472] script '/home/olivia/BUT2/controle.php' not found or unable to stat
+[Tue Oct 11 10:14:00.592492 2022] [core:error] [pid 15075] [client 100.64.49.75:50602] AH00037: Symbolic link not allowed or link target not accessible: /usr/share/phpMyAdmin/doc/html
+[Tue Oct 11 10:56:02.073865 2022] [php7:error] [pid 26084] [client 100.64.59.4:36250] script '/home/olivier/A2/PHP/TD4.connexion.php' not found or unable to stat
+[Tue Oct 11 11:10:53.625668 2022] [php7:error] [pid 25968] [client 100.64.59.9:56942] script '/home/victor/devweb/td4/site.php' not found or unable to stat
+[Tue Oct 11 11:17:10.531267 2022] [php7:error] [pid 11646] [client 172.19.170.119:53129] script '/home/aurion/php/td4/sites/sites.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~aurion/php/td4/
+[Tue Oct 11 11:20:04.311334 2022] [php7:error] [pid 11739] [client 100.64.59.11:57030] script '/home/remi/TD4/ajoutsites.php' not found or unable to stat
+[Tue Oct 11 11:34:46.729980 2022] [php7:error] [pid 14872] [client 100.64.59.6:33562] script '/home/sophie/BUT2/DevWeb/TD4/calculette.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~sophie/BUT2/DevWeb/TD4/ajout.view.php
+[Tue Oct 11 11:34:47.789321 2022] [php7:error] [pid 14872] [client 100.64.59.6:33562] script '/home/sophie/BUT2/DevWeb/TD4/calculette.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~sophie/BUT2/DevWeb/TD4/ajout.view.php
+[Tue Oct 11 11:35:01.088304 2022] [php7:error] [pid 14872] [client 100.64.59.6:35736] script '/home/sophie/BUT2/DevWeb/TD4/calculette.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~sophie/BUT2/DevWeb/TD4/ajout.view.php
+[Tue Oct 11 11:35:09.105251 2022] [php7:error] [pid 12150] [client 100.64.59.6:58540] script '/home/sophie/BUT2/DevWeb/TD4/calculette.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~sophie/BUT2/DevWeb/TD4/ajout.view.php
+[Tue Oct 11 11:35:09.513304 2022] [php7:error] [pid 12150] [client 100.64.59.6:58540] script '/home/sophie/BUT2/DevWeb/TD4/calculette.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~sophie/BUT2/DevWeb/TD4/ajout.view.php
+[Tue Oct 11 11:35:14.459265 2022] [php7:error] [pid 12150] [client 100.64.59.6:58540] script '/home/sophie/BUT2/DevWeb/TD4/calculette.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~sophie/BUT2/DevWeb/TD4/ajout.view.php
+[Tue Oct 11 11:47:05.241723 2022] [php7:error] [pid 29820] [client 100.64.59.11:51192] script '/home/remi/TD4/EditSites.php' not found or unable to stat
+[Tue Oct 11 11:47:24.545707 2022] [php7:error] [pid 5133] [client 100.64.59.11:44648] script '/home/remi/TD4/EditSites.php' not found or unable to stat
+[Tue Oct 11 11:47:34.490208 2022] [php7:error] [pid 5134] [client 172.19.170.137:51280] script '/home/damien/php/TD4/deletesite.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~damien/php/TD4/editsite.php
+[Tue Oct 11 11:47:41.251857 2022] [php7:error] [pid 29816] [client 100.64.59.11:60280] script '/home/remi/TD4/EditSItes.php' not found or unable to stat
+[Tue Oct 11 11:47:45.431416 2022] [php7:error] [pid 29816] [client 100.64.59.11:60280] script '/home/remi/TD4/EditSites.php' not found or unable to stat
+[Tue Oct 11 11:47:52.122486 2022] [php7:error] [pid 5132] [client 100.64.59.11:40810] script '/home/remi/TD4/editSites.php' not found or unable to stat
+[Tue Oct 11 11:47:59.943916 2022] [php7:error] [pid 29835] [client 100.64.59.11:51590] script '/home/remi/TD4/editSites.php' not found or unable to stat
+[Tue Oct 11 11:50:15.589607 2022] [php7:error] [pid 29933] [client 100.64.59.9:33774] script '/home/victor/devweb/td4/site.php' not found or unable to stat
+[Tue Oct 11 16:57:04.755550 2022] [core:crit] [pid 19361] (13)Permission denied: [client 100.64.49.72:58134] AH00529: /home/gabriel/.htaccess pcfg_openfile: unable to check htaccess file, ensure it is readable and that '/home/gabriel/' is executable
+[Tue Oct 11 16:57:29.211928 2022] [authz_core:error] [pid 29932] [client 100.64.49.72:33652] AH01630: client denied by server configuration: /home/gabriel
+[Tue Oct 11 16:58:23.196289 2022] [authz_core:error] [pid 19164] [client 100.64.49.72:56836] AH01630: client denied by server configuration: /home/nicolas
+[Tue Oct 11 17:02:14.966349 2022] [authz_core:error] [pid 12616] [client 100.64.49.72:58774] AH01630: client denied by server configuration: /home/allombert2
+[Tue Oct 11 17:02:22.867456 2022] [authz_core:error] [pid 12641] [client 100.64.49.72:34250] AH01630: client denied by server configuration: /home/nicolas
+[Tue Oct 11 17:05:49.558538 2022] [authz_core:error] [pid 12615] [client 100.64.49.72:48344] AH01630: client denied by server configuration: /home/minnie
+[Tue Oct 11 17:06:24.460401 2022] [authz_core:error] [pid 12641] [client 100.64.49.72:34564] AH01630: client denied by server configuration: /home/thierry
+[Tue Oct 11 17:06:37.279304 2022] [authz_core:error] [pid 12616] [client 100.64.49.72:60422] AH01630: client denied by server configuration: /home/thierry
+[Tue Oct 11 17:06:43.980189 2022] [authz_core:error] [pid 19262] [client 100.64.49.72:49062] AH01630: client denied by server configuration: /home/thierry
+[Tue Oct 11 17:14:47.722216 2022] [authz_core:error] [pid 12616] [client 100.64.49.72:46888] AH01630: client denied by server configuration: /home/emilio

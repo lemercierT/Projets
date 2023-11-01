@@ -1,0 +1,36 @@
+[Mon Oct 10 08:09:56.569281 2022] [core:error] [pid 27029] [client 100.64.49.43:50034] AH00037: Symbolic link not allowed or link target not accessible: /usr/share/phpMyAdmin/doc/html
+[Mon Oct 10 08:10:04.099957 2022] [core:error] [pid 27097] [client 100.64.49.43:50043] AH00037: Symbolic link not allowed or link target not accessible: /usr/share/phpMyAdmin/doc/html
+[Mon Oct 10 10:08:14.234250 2022] [php7:error] [pid 23674] [client 100.64.59.4:39714] script '/var/www/DevWeb_accueil/search.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~ramia/php/lp_web/tp3/index.php
+[Mon Oct 10 10:12:57.735272 2022] [php7:error] [pid 30678] [client 100.64.59.4:42102] script '/var/www/DevWeb_accueil/search.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~ramia/php/lp_web/tp3/index.php
+[Mon Oct 10 13:30:22.769415 2022] [php7:error] [pid 23674] [client 100.64.49.66:46766] script '/home/jonathan/BUT2/PHP/td3/calculette.php' not found or unable to stat
+[Mon Oct 10 13:47:03.670011 2022] [php7:error] [pid 32135] [client 100.64.49.72:50126] script '/home/olivia/BUT2/controle.php' not found or unable to stat
+[Mon Oct 10 13:47:04.753175 2022] [php7:error] [pid 24206] [client 100.64.49.93:38258] script '/home/joe/2A/DevWeb/td3/ex2/formulaire.php.' not found or unable to stat
+[Mon Oct 10 13:47:08.557782 2022] [php7:error] [pid 24206] [client 100.64.49.93:38258] script '/home/joe/2A/DevWeb/td3/ex2/formulaire.php' not found or unable to stat
+[Mon Oct 10 14:01:30.317319 2022] [authz_core:error] [pid 25252] [client 100.64.49.68:38460] AH01630: client denied by server configuration: /home/pierre    , referer: https://devweb.iutmetz.univ-lorraine.fr/~pierre/ihm/tp_personne/vue/personnel.html
+[Mon Oct 10 14:10:45.777363 2022] [php7:error] [pid 18027] [client 100.64.49.76:55550] script '/home/alice/PHP/TD4/site.php' not found or unable to stat
+[Mon Oct 10 14:11:20.607702 2022] [php7:error] [pid 18033] [client 100.64.49.75:44002] script '/home/marina/devweb/td4/index.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~marina/devweb/td4/site.php
+[Mon Oct 10 14:14:31.181318 2022] [php7:error] [pid 18028] [client 100.64.49.77:55792] script '/home/laure/2A/TD4/site.php' not found or unable to stat
+[Mon Oct 10 14:20:06.778107 2022] [php7:error] [pid 18250] [client 100.64.49.74:48938] script '/home/rachel/td3/calculette.vue.php' not found or unable to stat
+[Mon Oct 10 14:26:42.446796 2022] [php7:error] [pid 10943] [client 100.64.49.70:38260] script '/home/thibaut/devweb-2/td4/sites.php' not found or unable to stat
+[Mon Oct 10 14:27:15.087375 2022] [php7:error] [pid 11050] [client 100.64.49.81:48580] script '/home/perla/PHP_UEDevWeb/TD4/ajout.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~perla/PHP_UEDevWeb/TD4/
+[Mon Oct 10 14:27:16.419337 2022] [php7:error] [pid 18250] [client 100.64.49.81:48584] script '/home/perla/PHP_UEDevWeb/TD4/ajout.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~perla/PHP_UEDevWeb/TD4/
+[Mon Oct 10 14:27:20.650205 2022] [php7:error] [pid 18250] [client 100.64.49.81:48584] script '/home/perla/PHP_UEDevWeb/TD4/ajout/*ajout.php' not found or unable to stat
+[Mon Oct 10 14:41:19.393775 2022] [php7:error] [pid 18250] [client 100.64.49.68:54124] script '/home/pierre/devweb/td3/connexion.php' not found or unable to stat
+[Mon Oct 10 14:43:44.366188 2022] [php7:error] [pid 3872] [client 100.64.49.77:41040] script '/home/laure/2A/TD4/site.php' not found or unable to stat
+[Mon Oct 10 14:45:22.565722 2022] [php7:error] [pid 3999] [client 100.64.49.82:35234] script '/home/jade/DevWeb_2A/td4/site.php' not found or unable to stat
+[Mon Oct 10 14:45:36.544456 2022] [php7:error] [pid 18250] [client 100.64.49.85:38162] script '/home/audrey/DevWeb/td4/formulaire.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~audrey/DevWeb/td4/ajout.php
+[Mon Oct 10 14:48:41.257746 2022] [php7:error] [pid 4063] [client 100.64.49.75:45744] script '/home/marina/devweb/td4/ediSite.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~marina/devweb/td4/editSite.php
+[Mon Oct 10 14:48:44.862859 2022] [php7:error] [pid 4063] [client 100.64.49.75:45744] script '/home/marina/devweb/td4/ediSite.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~marina/devweb/td4/editSite.php
+[Mon Oct 10 14:49:01.401110 2022] [php7:error] [pid 28818] [client 100.64.49.75:58242] script '/home/marina/devweb/td4/ediSite.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~marina/devweb/td4/editSite.php
+[Mon Oct 10 14:49:16.445240 2022] [php7:error] [pid 28818] [client 100.64.49.75:58242] script '/home/marina/devweb/td4/deleteSite.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~marina/devweb/td4/editSite.php?idsite=1
+[Mon Oct 10 14:50:59.374888 2022] [php7:error] [pid 28826] [client 100.64.49.75:40480] script '/home/marina/devweb/td4/addSite.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~marina/devweb/td4/editSite.php?
+[Mon Oct 10 14:52:26.973877 2022] [php7:error] [pid 29006] [client 100.64.49.87:42784] script '/home/aurore/DevWeb/TD4/ajou.php' not found or unable to stat
+[Mon Oct 10 14:59:29.490635 2022] [php7:error] [pid 29282] [client 100.64.49.80:44788] script '/home/celine/2A/TD4/site.php' not found or unable to stat
+[Mon Oct 10 15:05:33.660121 2022] [php7:error] [pid 29207] [client 100.64.49.90:49876] script '/home/joseph/DevWeb/td4/table.php' not found or unable to stat
+[Mon Oct 10 15:08:07.572002 2022] [php7:error] [pid 21948] [client 100.64.49.85:42950] script '/home/audrey/DevWeb/td4/formulaire.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~audrey/DevWeb/td4/ajout.view.php
+[Mon Oct 10 15:08:28.920310 2022] [php7:error] [pid 21949] [client 100.64.49.85:60684] script '/home/audrey/DevWeb/td4/formulaire.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~audrey/DevWeb/td4/ajout.view.php
+[Mon Oct 10 15:08:35.895357 2022] [php7:error] [pid 21798] [client 100.64.49.85:47034] script '/home/audrey/DevWeb/td4/formulaire.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~audrey/DevWeb/td4/ajout.view.php
+[Mon Oct 10 15:08:56.363426 2022] [php7:error] [pid 21948] [client 100.64.49.85:51638] script '/home/audrey/DevWeb/td4/formulaire.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~audrey/DevWeb/td4/ajout.view.php
+[Mon Oct 10 15:17:38.832324 2022] [php7:error] [pid 983] [client 100.64.49.65:33908] script '/home/louis/td4/deleteSite.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~louis/td4/editSite.php?idsite=1
+[Mon Oct 10 15:17:41.919360 2022] [php7:error] [pid 983] [client 100.64.49.65:33908] script '/home/louis/td4/deleteSite.php' not found or unable to stat, referer: https://devweb.iutmetz.univ-lorraine.fr/~louis/td4/editSite.php?idsite=1
+[Mon Oct 10 15:53:13.800075 2022] [core:error] [pid 508] [client 100.64.48.135:50987] AH00037: Symbolic link not allowed or link target not accessible: /usr/share/phpMyAdmin/doc/html
