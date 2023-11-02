@@ -26,8 +26,7 @@ async function noConnect(){
 
 //Exemple de recuperation de donnée d'un client à partir de la bande MRZ:
 
-const client = new Client(["IDFRALEMERCIER<<<<<<<<<<<<<<<<057042",
-                           "1811579505934THIBAULT<<DANI0302209M1"]);
+const client = new Client(["your id card"]);
 
 const client1 = new Client(['I<UTOD23145890<1233<<<<<<<<<<<',
                             '7408122F1204159UTO<<<<<<<<<<<6',
