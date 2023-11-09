@@ -27,9 +27,30 @@
         $array_req = $db->execSQL($requete);
         echo "<br>";
 
-        foreach($array_req as $row){
-            echo $row["id_inf"]." ".$row["date_inf"]." ".$row["num_immat"]." ".$row["num_permis"]."<br>";
-        }
     ?>
+        <table>
+            <th>id_inf</th>
+            <th>date_inf</th>
+            <th>num_immat</th>
+            <th>num_permis</th>
+            <?php 
+                $i = 0;
+                foreach ($array_req as $row):
+                    $_SESSION["infraction"][$i] = $row;
+            ?>
+                <tr>
+                    <td><?=$row["id_inf"]?></td>
+                    <td><?=$row["date_inf"]?></td>
+                    <td><?=$row["num_immat"]?></td>
+                    <td><?=$row["num_permis"]?></td>
+                    <td>
+                        <form action="Consulter.view.php" method="post">
+                            <input type="hidden" name="index" value="<?=$i?>">
+                            <input type="submit" value="Consulter">
+                        </form>
+                    </td>
+                </tr>
+            <?php $i++; endforeach;?>
+        </table>
 </body>
 </html>

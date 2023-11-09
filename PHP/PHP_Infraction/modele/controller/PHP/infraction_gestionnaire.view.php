@@ -32,6 +32,7 @@
     <?php 
         $requete = "SELECT * FROM infraction";
         $array_req = $db->execSQL($requete);
+        $i = 0;
         foreach($array_req as $row):
     ?>
         <tr>
@@ -39,13 +40,14 @@
             <td><?=$row["date_inf"]?></td>
             <td><?=$row["num_immat"]?></td>
             <td><?=$row["num_permis"]?></td>
-            <td><input type="button" value="ajout" id="ajout"></td>
-            <td><input type="button" value="modification" id="modification"></td>
-            <td><input type="button" value="suppresion" id="suppression"></td>
+            <td><form action="Ajout.view.php" method="post"><input type="submit" value="ajout" id="ajout<?=$i?>"></form></td>
+            <td><form action="Modification.view.php" method="post"><input type="submit" value="modification" id="modification<?=$i?>"></form></td>
+            <td><form action="Supression.view.php" method="post"><input type="submit" value="suppresion" id="suppression<?=$i?>"></form></td>
         </tr>
-    <?php endforeach;?>
+    <?php $i++; endforeach;?>
 </table>
 
 
 </body>
+<script src="./main.js"></script>
 </html>
