@@ -6,23 +6,33 @@ typedef struct Personne{
     char* nom;
     char* prenom;
     int age;
-}personne;
+}Personne;
 
 typedef struct Etudiant{
     int matricule;
     int* notes;
-    struct Personne etudiant;
-}etudiant;
+    Personne etudiant;
+}Etudiant;
 
-int main(void){
-    struct Etudiant thibault;
-    int* array_notes; 
-    thibault.matricule = 1;
-    thibault.etudiant.nom = "Lemercier";
-    thibault.etudiant.prenom = "Thibault";
-    thibault.etudiant.age = 20;
-    thibault.notes = malloc(sizeof(int) * 10);
-    thibault.notes[0] = 10;
+int main(void) {
+    int nombreEtudiants = 3;
+    Etudiant* tableauEtudiants = malloc(sizeof(Etudiant) * nombreEtudiants);
 
-    printf("matricule: %d\nnom: %s\nprenom: %s\nage: %d\nnotes: %d\n", thibault.matricule, thibault.etudiant.nom, thibault.etudiant.prenom, thibault.etudiant.age, *thibault.notes);
+    tableauEtudiants[0].matricule = 1;
+    tableauEtudiants[0].etudiant.nom = "Lemercier";
+    tableauEtudiants[0].etudiant.prenom = "Thibault";
+    tableauEtudiants[0].etudiant.age = 20;
+    tableauEtudiants[0].notes = malloc(sizeof(int) * 10);
+    tableauEtudiants[0].notes[0] = 10;
+
+    printf("Informations du premier étudiant:\n");
+    printf("Matricule: %d\nNom: %s\nPrenom: %s\nAge: %d\nNotes: %d\n\n",
+           tableauEtudiants[0].matricule, tableauEtudiants[0].etudiant.nom,
+           tableauEtudiants[0].etudiant.prenom, tableauEtudiants[0].etudiant.age,
+           *tableauEtudiants[0].notes);
+
+    free(tableauEtudiants[0].notes);
+    free(tableauEtudiants);
+
+    return 0;
 }

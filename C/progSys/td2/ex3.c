@@ -3,14 +3,23 @@
 #include <string.h>
 
 int main(void){
-    unsigned short int ligne, colonne;
+    int ligne, colonne;
     int* tab;
 
-    tab = malloc(sizeof(int) * ligne);
     puts("saisir nombre de ligne :");
-    scanf("%hu", &ligne);
+    scanf("%d", &ligne);
+    tab = malloc(1 * ligne);
    
-    printf("%lu\n", sizeof(tab));
+    for(int i = 0; i < sizeof(tab); i++){
+        int value;
+        puts("entrer valeur:");
+        scanf("%d", &value);
+        tab[i] = value;
+    }
+
+    for(int i = 0; i < sizeof(tab); i++){
+        printf("%d", tab[i]);
+    }
 
     return 0;
 }

@@ -6,7 +6,7 @@ typedef struct Personne{
     char* nom;
     char* prenom;
     int age;
-}personne;
+}Personne;
 
 int main(void){
     struct Personne thibault;
