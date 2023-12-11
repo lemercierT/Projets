@@ -1,12 +1,12 @@
 # I. Mémoire, CPU, Capacités du disque dur
 
 ## Mémoire
-La mémoire RAM du serveur "sujet5" a été évaluée à l'aide de la commande free -h, fournissant les informations suivantes : 
-              total       utilisé      libre     partagé tamp/cache   disponible
-Mem:          1,9Gi       214Mi       1,1Gi       3,0Mi       676Mi       1,5Gi
-Partition d'échange:      974Mi       0,0Ki       974Mi
-Dans cette sortie, le serveur dispose de 1.9 Go de mémoire RAM totale, dont 214 Mi sont actuellement utilisés, 
-1.1 Go sont disponibles, et 974 Mi sont utilisés pour la partition d'échange.
+La mémoire RAM du serveur "sujet5" a été évaluée à l'aide de la commande free -h, fournissant les informations suivantes : <br>
+              total       utilisé      libre     partagé tamp/cache   disponible<br>
+Mem:          1,9Gi       214Mi       1,1Gi       3,0Mi       676Mi       1,5Gi<br>
+Partition d'échange:      974Mi       0,0Ki       974Mi<br>
+Dans cette sortie, le serveur dispose de 1.9 Go de mémoire RAM totale, dont 214 Mi sont actuellement utilisés,<br> 
+1.1 Go sont disponibles, et 974 Mi sont utilisés pour la partition d'échange.<br>
 
 ## Capacité disque dur
 L'utilisation de l'espace disque sur le serveur a été analysée à l'aide de la commande df -h, fournissant le résultat suivant :
@@ -193,13 +193,13 @@ Ces règles assurent une sécurité renforcée en limitant les points d'entrée 
 
 
 ### nano /etc/hosts                                                                     
-127.0.0.1       localhost
-100.74.7.84     sujet5.iutmetz.site.univ-lorraine.fr    sujet5
-100.74.7.84     sujet5server.com                        www.sujet5server.com
-The following lines are desirable for IPv6 capable hosts
-::1     localhost ip6-localhost ip6-loopback
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
+127.0.0.1       localhost 
+100.74.7.84     sujet5.iutmetz.site.univ-lorraine.fr    sujet<br>
+100.74.7.84     sujet5server.com                        www.sujet5server.com 
+The following lines are desirable for IPv6 capable hosts 
+::1     localhost ip6-localhost ip6-loopback 
+ff02::1 ip6-allnodes 
+ff02::2 ip6-allrouters 
 
 
 
