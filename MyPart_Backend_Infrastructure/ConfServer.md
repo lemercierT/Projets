@@ -196,7 +196,7 @@ Ces règles assurent une sécurité renforcée en limitant les points d'entrée 
 127.0.0.1       localhost
 100.74.7.84     sujet5.iutmetz.site.univ-lorraine.fr    sujet5
 100.74.7.84     sujet5server.com                        www.sujet5server.com
-# The following lines are desirable for IPv6 capable hosts
+The following lines are desirable for IPv6 capable hosts
 ::1     localhost ip6-localhost ip6-loopback
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
