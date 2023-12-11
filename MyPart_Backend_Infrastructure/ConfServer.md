@@ -175,7 +175,7 @@ Ces règles assurent une sécurité renforcée en limitant les points d'entrée 
 
 
 ## 7. Configuration serveur
-nano /etc/apache2/sites-available/sujet5_server.com.conf
+### nano /etc/apache2/sites-available/sujet5_server.com.conf
 <VirtualHost *:80>
     ServerName sujet5server.com
     ServerAlias www.sujet5server.com
@@ -192,7 +192,7 @@ nano /etc/apache2/sites-available/sujet5_server.com.conf
 </VirtualHost>
 
 
-nano /etc/hosts                                                                     
+### nano /etc/hosts                                                                     
 127.0.0.1       localhost
 100.74.7.84     sujet5.iutmetz.site.univ-lorraine.fr    sujet5
 100.74.7.84     sujet5server.com                        www.sujet5server.com
