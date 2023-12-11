@@ -5,7 +5,7 @@ La mémoire RAM du serveur "sujet5" a été évaluée à l'aide de la commande f
               total       utilisé      libre     partagé tamp/cache   disponible<br>
 Mem:          1,9Gi       214Mi       1,1Gi       3,0Mi       676Mi       1,5Gi<br>
 Partition d'échange:      974Mi       0,0Ki       974Mi<br>
-Dans cette sortie, le serveur dispose de 1.9 Go de mémoire RAM totale, dont 214 Mi sont actuellement utilisés,<br> 
+Dans cette sortie, le serveur dispose de 1.9 Go de mémoire RAM totale, dont 214 Mi sont actuellement utilisés,
 1.1 Go sont disponibles, et 974 Mi sont utilisés pour la partition d'échange.<br>
 
 ## Capacité disque dur
@@ -131,7 +131,7 @@ Pour surmonter cette difficulté, j'ai pris la décision d'installer préalablem
 Cette correction a permis d'établir la connexion nécessaire entre phpMyAdmin et la base de données, garantissant ainsi une configuration fonctionnelle.<br>
 
 ## 2. Installation de Tesseract OCR dans le Répertoire Backend
-Une autre difficulté est survenue lors de l'installation de Tesseract OCR dans le répertoire Backend du serveur. Cette étape était cruciale pour assurer<br> 
+Une autre difficulté est survenue lors de l'installation de Tesseract OCR dans le répertoire Backend du serveur. Cette étape était cruciale pour assurer
 le bon fonctionnement des scripts PHP utilisant Tesseract OCR afin de rendre un document d'identité sous forme textuelle et traitable.<br>
 
 Solution:<br>
@@ -177,7 +177,7 @@ Ces règles assurent une sécurité renforcée en limitant les points d'entrée 
 
 ## 7. Configuration serveur
 ### nano /etc/apache2/sites-available/sujet5_server.com.conf
-<VirtualHost *:80><br>
+<<VirtualHost *:80><br>
     ServerName sujet5server.com<br>
     ServerAlias www.sujet5server.com<br>
     DocumentRoot "/var/www/html"<br>
