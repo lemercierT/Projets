@@ -11,10 +11,10 @@
 
     $fraMRZ = '/^[IDS]{2}[FRA]{3}[A-Z<]{25}[0-9]{6}[0-9]{12}[0-9]{1}[A-Z<]{14}[0-9]{6}[0-9]{1}[MF]{1}[0-9]{1}$/';
 
-    $id = preg_replace(['/[ ]/', '/[\n]/'], "", $test);
+    $test = preg_replace(['/[ ]/', '/[\n]/'], "", $test);
     echo strlen($IDFRA);
 
-    if(preg_match($fraMRZ, trim($id))){
+    if(preg_match($fraMRZ, trim($test))){
         echo "La chaîne MRZ est valide pour le format français.\n";
     }else{
         echo "La chaîne MRZ n'est pas valide pour le format français.\n";
