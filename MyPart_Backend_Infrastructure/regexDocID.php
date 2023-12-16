@@ -6,8 +6,8 @@
     $id = $tesseract->run();
 
 
-    $IDFRA = "IDFRALEMERCIER<<<<<<<<<<<<<<<<0570421811579505934THIBAULT<<DANI0302209M1";
-    $test = "   IDFRAL  EMERCIER<<<<<<  <<<<<<<<<  <0570421811  579505934THIBAULT<<DANI  0302209M1   ";
+    $IDFRA = "IDFRA";
+    $test = "   IDFRA";
 
     $fraMRZ = '/^[IDS]{2}[FRA]{3}[A-Z<]{25}[0-9]{6}[0-9]{12}[0-9]{1}[A-Z<]{14}[0-9]{6}[0-9]{1}[MF]{1}[0-9]{1}$/';
 
@@ -21,8 +21,8 @@
     }
 
     
-    $passport = "P<FRALEMERCIER<<KATIA<VERONIQUE<MARIE<LOU<<<21ED028930FRA7703182F3112076<<<<<<<<<<<<<<02";
-    $test = "P <  FRAL  EME  RCIER<<KA  TIA  <VERONI  QUE<MARI  E<LOU<<<21ED  0289  30FR   A7703182F3112076<   <<<<<<<<<<<<<02";
+    $passport = "P<FRALE<<<<<<<<02";
+    $test = "P <  FRAL  EME  <<02";
     $passportReg = '/^[P<]{2}[A-Z]{3}[A-Z<]{39}[A-Z0-9]{9}[0-9]{1}[A-Z]{3}[0-9]{6}[0-9]{1}[A-Z]{1}[0-9]{6}[0-9]{1}[0-9<]{14}[0-9]{1}[0-9]{1}$/';
 
     $test = preg_replace('/[ ]/', "", $test);
