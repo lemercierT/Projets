@@ -15,6 +15,28 @@
             $this->_imageMRZ = $imageMRZ;
         }
 
+        private function regexDocID($mrz){
+            $fraMRZ = '/^[IDS]{2}[FRA]{3}[A-Z<]{25}[0-9]{6}[0-9]{12}[0-9]{1}[A-Z<]{14}[0-9]{6}[0-9]{1}[MF]{1}[0-9]{1}$/';
+            $passportReg = '/^[P<]{2}[A-Z]{3}[A-Z<]{39}[A-Z0-9]{9}[0-9]{1}[A-Z]{3}[0-9]{6}[0-9]{1}[A-Z]{1}[0-9]{6}[0-9]{1}[0-9<]{14}[0-9]{1}[0-9]{1}$/';
+            $td1Reg = '/^[I<]{2}[A-Z]{3}[A-Z0-9]{9}[0-9<]{1}[A-Z0-9<]{15}[0-9]{6}[0-9]{1}[MF]{1}[0-9]{6}[0-9]{1}[A-Z]{3}[A-Z0-9<]{11}[0-9]{1}[A-Z0-9<]{30}$/'; 
+            $td2Reg = '/^[I<]{2}[A-Z]{3}[A-Z<]{31}[A-Z0-9]{9}[0-9]{1}[A-Z]{3}[0-9]{6}[0-9]{1}[MF]{1}[0-9]{6}[0-9]{1}[A-Z0-9<]{7}[0-9]{1}$/';
+
+            $documentCode = substr($mrz, 0, 1);
+            switch($documentCode){
+                case "I":
+                    if(strlen($mrz) == 72 && substr(2, 3) === "FRA") if(preg_match($fraMRZ, $mrz)) return true;
+                    else if(strlen($mrz) == 90) if(preg_match($td1Reg, $mrz)) return true;
+                    else{
+                        if(preg_match($td2Reg, $mrz)) return true;
+                    }
+                case "P":
+                    if(strlen($mrz) == 88) if(preg_match($passportReg, $mrz)) return true;
+                case "D":
+                    return false;
+                    break;
+            }
+        }
+
         private function stringReplace($string){
             if($string == null) return $string;
             else{
@@ -44,13 +66,13 @@
             $documentCode = substr($this->_text, 0, 1);
             switch($documentCode){
                 case "I":
-                    if($lenght == 72 && (substr($this->_text, 2, 3)) == "FRA") return $this->IDFrenchDecrypt($this->_text);
-                    else if($lenght == 90) return $this->IDdecryptTD1($this->_text);
-                    else return $this->IDdecryptTD2($this->_text);
+                    if($lenght == 72 && (substr($this->_text, 2, 3)) == "FRA") return ($this->regexDocID($this->_text)) ? $this->IDFrenchDecrypt($this->_text) : throw new Error("Invalide FRA MRZ");
+                    else if($lenght == 90) return ($this->regexDocID($this->_text)) ? $this->IDdecryptTD1($this->_text) : throw new Error("Invalide TD1 MRZ");
+                    else return ($this->regexDocID($this->_text)) ? $this->IDdecryptTD2($this->_text) : throw new Error("Invalide TD2 MRZ");
                 case "P":
-                    return $this->PassportDecrypt($this->_text);
+                    return ($this->regexDocID($this->_text)) ? $this->PassportDecrypt($this->_text) : throw new Error("Invalide TD2 MRZ");
                 case "D":
-                    return $this->IDDriverLicense($this->_text);
+                    return ($this->regexDocID($this->_text)) ? $this->IDDriverLicense($this->_text) : throw new Error("Invalide TD2 MRZ");
             }
             
         }
