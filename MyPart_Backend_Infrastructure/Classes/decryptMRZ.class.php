@@ -4,11 +4,9 @@
     use thiagoalessio\TesseractOCR\TesseractOCR;
 
     class decryptMRZ{
-        private $_scanMRZ;
         private $_tesseract;
         private $_imageMRZ;
         private $_text;
-        private $array_infos;
         public $_client;
 
         public function __construct($imageMRZ){
