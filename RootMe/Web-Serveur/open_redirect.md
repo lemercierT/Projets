@@ -10,7 +10,7 @@ Trouvez un moyen de faire une redirection vers un domaine autre que ceux propos√
 
 1. Analyse de la page
 
-Il y a 3 liens cliquables, un vers Facebook, un autre vers Twitter et le dernier vers Slack
+Il y a 3 liens cliquables, un vers Facebook, un autre vers Twitter et le dernier vers Slack.
 
 Voici le code source de la page html repr√©sentant les 3 liens: 
 
