@@ -18,6 +18,7 @@ fn input_url() -> String {
         }
     }
 
+    println!("[+] Selected URL : {}", url);
     return url;
 }
 
@@ -43,6 +44,7 @@ fn choose_attack_mod() -> String{
         }
     }
 
+    println!("[+] Selected choice : {}", choice);
     return choice;
 }
 
@@ -63,6 +65,7 @@ fn wordlist_attack() ->  String{
         }
     }
 
+    println!("[+] Selected path worlist : {}", path_wordlist);
     return path_wordlist;
 }
 
@@ -92,6 +95,7 @@ fn bruteforce_attack() -> String{
         }
     }
 
+    println!("[+] Selected character : {}", selected_char);
     return selected_char;
 }
 
