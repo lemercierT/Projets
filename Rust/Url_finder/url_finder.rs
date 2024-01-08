@@ -1,5 +1,6 @@
-use std;
+use std::{self, fs::File, io::{BufReader, BufRead}};
 use regex::Regex;
+use reqwest::{self, Error};
 
 fn input_url() -> String {
     let mut url: String = String::with_capacity(20);
@@ -69,9 +70,34 @@ fn wordlist_attack() ->  String{
     return path_wordlist;
 }
 
-// fn url_wordlist_attack(url: String, path_wordlist: String) -> Result<String, Box<dyn Error>>{
-//     // Attentre wordlist_attack
-// }
+fn url_wordlist_attack(url: String, path_wordlist: String) -> &'static str{
+    let file_path: String = path_wordlist.trim().to_string();
+    let file: File = std::fs::File::open(file_path).expect("[-] File not found.");
+    let buffer_reader: BufReader<File> = std::io::BufReader::new(file); 
+
+    for line in buffer_reader.lines(){
+        let payload_url = url.clone() + line.unwrap().trim();
+        println!("[+] Test -> {}", payload_url);
+        match attack_url(payload_url){
+            Ok(_) => {
+                continue;
+            }
+            Err(error) => {
+                let _error: Error = error;
+                println!("[-] Error fetching URL : {}.", _error);
+            }
+        }
+    }
+
+    return "[+] Not found.";
+}
+
+fn attack_url(payload: String) -> Result<(), reqwest::Error>{
+    let body = reqwest::blocking::get(payload)?.text()?;
+
+    println!("{:?}", body);
+    Ok(())
+}
 
 fn bruteforce_attack() -> String{
     let mut selected_char: String = String::new();
@@ -102,6 +128,7 @@ fn bruteforce_attack() -> String{
 // fn url_bruteforce_attack(url: String, selected_char: String) -> Result<String, Box<dyn Error>>{
 //     // Attentre bruteforce_attack
 // }
+
 fn main(){
     let mut _url: String = String::new();
     _url = input_url();
@@ -113,6 +140,7 @@ fn main(){
     let mut _selected_char: String = String::new();
     if _choice == "1"{
         _path_wordlist = wordlist_attack();
+        url_wordlist_attack(_url, _path_wordlist);
     }else if _choice == "2" {
         _selected_char = bruteforce_attack();
     }
