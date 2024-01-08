@@ -1,10 +1,11 @@
 use std::{self, fs::File, io::{BufReader, BufRead}};
 use regex::Regex;
 use reqwest::{self, Error};
+use termion::color;
 
 fn input_url() -> String {
     let mut url: String = String::with_capacity(20);
-    println!("[x] Enter URL : ");
+    println!("{}[x] Enter URL : ", color::Fg(color::Green));
 
     while url.is_empty(){
         let mut buffer = String::new();
@@ -93,9 +94,11 @@ fn url_wordlist_attack(url: String, path_wordlist: String) -> &'static str{
 }
 
 fn attack_url(payload: String) -> Result<(), reqwest::Error>{
-    let body = reqwest::blocking::get(payload)?.text()?;
+    let body = reqwest::blocking::get(payload.clone())?;
 
-    println!("{:?}", body);
+    if body.status().is_success(){
+        println!("{}[+] FOUND => {}{}", color::Fg(color::Red), payload.clone(), color::Fg(color::Green));
+    }
     Ok(())
 }
 
