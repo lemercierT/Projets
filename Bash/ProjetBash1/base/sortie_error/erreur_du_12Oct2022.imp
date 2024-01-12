@@ -1,5 +1,0 @@
-ERREUR DU 12 Octobre 2022 : 
- negotiationerror pid 32228 (13)Permission denied client 100.64.48.12849490 AH00686 cannot read directory for multi /home/laurent/
- negotiationerror pid 32616 (13)Permission denied client 100.64.48.12853698 AH00686 cannot read directory for multi /home/laurent/
- negotiationerror pid 25524 (13)Permission denied client 100.64.48.12846120 AH00686 cannot read directory for multi /home/laurent/
- php7error pid 18103 client 100.64.49.8858240 script '/home/melissa/devWEB/php_controle/triangleEtoile.php' not found or unable to stat
