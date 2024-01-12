@@ -1,0 +1,7 @@
+{
+  "deno.enable": true,
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "deno.lint": false,
+  "deno.testing.enable": true
+}

@@ -1,0 +1,4 @@
+[Wed Oct 12 08:41:22.254022 2022] [negotiation:error] [pid 32228] (13)Permission denied: [client 100.64.48.128:49490] AH00686: cannot read directory for multi: /home/laurent/
+[Wed Oct 12 08:41:47.085712 2022] [negotiation:error] [pid 32616] (13)Permission denied: [client 100.64.48.128:53698] AH00686: cannot read directory for multi: /home/laurent/
+[Wed Oct 12 08:42:09.610788 2022] [negotiation:error] [pid 25524] (13)Permission denied: [client 100.64.48.128:46120] AH00686: cannot read directory for multi: /home/laurent/
+[Wed Oct 12 10:06:33.357455 2022] [php7:error] [pid 18103] [client 100.64.49.88:58240] script '/home/melissa/devWEB/php_controle/triangleEtoile.php' not found or unable to stat

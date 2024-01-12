@@ -1,0 +1,28 @@
+ERREUR DU 14 Octobre 2022 : 
+ php7error pid 22289 client 100.64.49.4754232 script '/home/melissa/devWEB/php_controle/triangleEtoile.php' not found or unable to stat
+ php7error pid 21074 client 100.64.49.4046102 script '/home/emma/PHP/TD4/eidtSite.php' not found or unable to stat
+ php7error pid 21231 client 100.64.49.4552644 script '/home/aurelie/DevWeb/TD4BDD/formulaires.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~aurelie/DevWeb/TD4BDD/ajout.php
+ php7error pid 21231 client 100.64.49.3835920 script '/home/julien/BUT2/PHP/TD4/editSites.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~julien/BUT2/PHP/TD4/ajout.php?
+ php7error pid 21074 client 100.64.49.3337104 script '/home/marie/td3/ajout.php' not found or unable to stat
+ php7error pid 21039 client 100.64.49.3833512 script '/home/julien/BUT2/PHP/TD4/editSites.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~julien/BUT2/PHP/TD4/ajout.php?
+ php7error pid 6844 client 100.64.49.3846858 script '/home/julien/BUT2/PHP/TD4/editMSite.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~julien/BUT2/PHP/TD4/editSite.php
+ php7error pid 14324 client 100.64.49.3453956 script '/home/armelle/web_BUT2/td4/form.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~armelle/web_BUT2/td4/ajout.php
+ php7error pid 14109 client 100.64.49.3436902 script '/home/armelle/web_BUT2/td4/ajout.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~armelle/web_BUT2/td4/
+ php7error pid 6867 client 100.64.49.3447638 script '/home/armelle/web_BUT2/td4/form.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~armelle/web_BUT2/td4/ajout.php
+ php7error pid 6858 client 100.64.49.3442106 script '/home/armelle/web_BUT2/td4/form.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~armelle/web_BUT2/td4/ajout.php
+ php7error pid 6867 client 100.64.49.3459330 script '/home/armelle/web_BUT2/td4/form.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~armelle/web_BUT2/td4/ajout.php
+ php7error pid 6847 client 100.64.49.3435486 script '/home/armelle/web_BUT2/td4/form.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~armelle/web_BUT2/td4/ajout.php
+ php7error pid 14175 client 100.64.49.3434946 script '/home/armelle/web_BUT2/td4/form.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~armelle/web_BUT2/td4/ajout.php
+ php7error pid 14109 client 100.64.49.4538668 script '/home/aurelie/DevWeb/TD4BDD/formulaires.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~aurelie/DevWeb/TD4BDD/ajout.php
+ php7error pid 14175 client 100.64.49.4557368 script '/home/aurelie/DevWeb/TD4BDD/formulaires.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~aurelie/DevWeb/TD4BDD/ajout.php
+ php7error pid 32028 client 100.64.49.4760480 script '/home/melissa/devWEB/td4/formulaires.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~melissa/devWEB/td4/sites.php
+ php7error pid 32065 client 100.64.49.4757824 script '/home/melissa/devWEB/td4/site.php' not found or unable to stat
+ php7error pid 32281 client 100.64.49.3539668 script '/home/marouane/progweb/td4/supprimer.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~marouane/progweb/td4/editSites.php
+ php7error pid 32281 client 100.64.49.3548890 script '/home/marouane/progweb/td4/supprimer.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~marouane/progweb/td4/editSites.php
+ php7error pid 25434 client 100.64.49.3549056 script '/home/marouane/progweb/td4/modifier.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~marouane/progweb/td4/editSites.php
+ php7error pid 17895 client 100.64.49.4543238 script '/home/aurelie/DevWeb/TD4BDD/eidtSites.php' not found or unable to stat
+ php7error pid 25436 client 100.64.49.4450576 script '/home/paul/PHP/td4/sup.php' not found or unable to stat
+ php7error pid 17896 client 100.64.49.4555298 script '/home/aurelie/DevWeb/TD4BDD/editsites.php' not found or unable to stat
+ php7error pid 18259 client 100.64.49.4551124 script '/home/aurelie/DevWeb/TD4BDD/editS*ites.php' not found or unable to stat
+ php7error pid 10969 client 100.64.49.4640514 script '/home/anne/WEB/td4/supprimer.php' not found or unable to stat, referer https//devweb.iutmetz.univ-lorraine.fr/~anne/WEB/td4/sites.php
+ php7error pid 10970 client 100.64.49.3838038 script '/home/julien/BUT2/PHP/TD4/editSites.php' not found or unable to stat

@@ -1,0 +1,22 @@
+
+.all{
+    text-align: center;
+    background-color: lightgray;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*.plus{
+    background-image: url(./images/plus.png);
+}
+.fois{
+    background-image: url(./images/fois.png);
+}
+.moins{
+    background-image: url(./images/moins.png);
+}
+.divv{
+    background-image: url(./images/div.png);
+}*/
