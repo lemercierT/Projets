@@ -99,7 +99,7 @@ fn level4_thread(string: String) -> (){
 
 fn level5_thread(url: String, wordlist: String) -> (){
     println!("{}", 1);
-    let (sender, receiver) = std::sync::mpsc::channel::<()>();
+    let (sender, receiver) = std::sync::mpsc::channel::<String>();
 
     if let Ok(file) = std::fs::File::open(&wordlist){
         let buffer = std::io::BufReader::new(file);
@@ -110,25 +110,26 @@ fn level5_thread(url: String, wordlist: String) -> (){
                 println!("payload : {}", payload.clone());
                 if let Ok(response) = reqwest::blocking::get(&payload){
                     if response.status().is_success(){
-                        if let Ok(_) = sender.send(level5_thread(url.clone(), wordlist.clone())){
-                            println!("New thread!");
-                        }else{
-                            println!("error sending thread");
-                        }
+                        println!("SUCCESS");
+                        if let Ok(_) = sender.send(payload.to_owned()){
+                            println!("SENT");
+                        };
                     }   
                 }
             }
         });
 
         let recv_thread = std::thread::spawn(move || {
-            if let Ok(_) = receiver.recv(){
-                println!("okkkkk");
+            if let Ok(payload) = receiver.recv(){
+                println!("RECEIVE");
+                level5_thread(payload, wordlist.clone())
             }
         });
         recv_thread.join().unwrap();
         send_thread.join().unwrap();
     }
 }
+
 fn main() {
     level1_thread();
     println!();
@@ -138,6 +139,5 @@ fn main() {
     println!();
     level4_thread("test".to_string());
     println!();
-    level5_thread((&"http://testphp.vulnweb.com/").to_string(), "/Users/admin/Documents/Programmation/Rust/low_level_rust/src/word.txt".to_string());
+    level5_thread(("http://testphp.vulnweb.com/").to_string(), "/Users/admin/Documents/Programmation/Rust/low_level_rust/src/word.txt".to_string());
 }
-
