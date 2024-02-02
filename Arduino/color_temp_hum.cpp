@@ -1,6 +1,5 @@
 #include <DHT.h>
 #include <Wire.h>
-#include <LiquidCrystal.h>
 #include <Adafruit_Sensor.h>
 
 #define ABLUE 6
