@@ -1,9 +1,9 @@
 use std::{net::SocketAddr, time::{Duration, Instant}};
 use reqwest::{header::HeaderMap, Client, StatusCode, Url, Version};
 
-const MAX_BYTE: usize = 255;
-const NUMBER_THREAD: usize = 150;
-const TIMEOUT: u64 = 200;
+const MAX_BYTE: usize = 0xFF;
+const NUMBER_THREAD: usize = 0x96; // 150 threads
+const TIMEOUT: u64 = 0xCB; // 200ms
 
 fn create_client() -> Client{
     let timeout_duration: Duration = std::time::Duration::from_millis(TIMEOUT);
@@ -39,7 +39,7 @@ fn get_ip_list(_start_ip: Option<&str>) -> Vec<String>{
         let ip_lenght: usize = ip_split.len();
         
         match ip_lenght{
-            1 | 2 | 3 => return generate_ip_from_something(start_ip, ip_lenght),     
+            0x1 | 0x2 | 0x3 => return generate_ip_from_something(start_ip, ip_lenght),     
             _ => return Vec::new(),  
         }
     }else{
@@ -48,25 +48,25 @@ fn get_ip_list(_start_ip: Option<&str>) -> Vec<String>{
 }
 
 fn generate_ip_from_something(_start_ip: &str, ip_lenght: usize) -> Vec<String>{
-    if ip_lenght == 3{
+    if ip_lenght == 0x3{
         let mut ip_list: Vec<String> = Vec::with_capacity(MAX_BYTE);
-        for d in 1..=255{
+        for d in 0x1..=0xFF{
             ip_list.push(std::format!("http://{}.{}:80/", _start_ip, d));
         }
         return ip_list;
-    }else if ip_lenght == 2{
+    }else if ip_lenght == 0x2{
         let mut ip_list: Vec<String> = Vec::with_capacity(MAX_BYTE * MAX_BYTE);
-        for d in 1..=255{
-            for c in 1..=255{
+        for d in 0x1..=0xFF{
+            for c in 0x1..=0xFF{
                 ip_list.push(std::format!("http://{}.{}.{}:80/", _start_ip, c, d));
             }
         }
         return ip_list;
     }else{
         let mut ip_list: Vec<String> = Vec::with_capacity(MAX_BYTE * MAX_BYTE * MAX_BYTE);
-        for d in 1..=255{
-            for c in 1..=255{
-                for b in 1..=255{
+        for d in 0x1..=0xFF{
+            for c in 0x1..=0xFF{
+                for b in 0x1..=0xFF{
                     ip_list.push(std::format!("http://{}.{}.{}.{}:80/", _start_ip, b, c, d));
                 }
             }
@@ -78,10 +78,10 @@ fn generate_ip_from_something(_start_ip: &str, ip_lenght: usize) -> Vec<String>{
 fn generate_ip_from_nothing() -> Vec<String>{
     let mut ip_list: Vec<String> = Vec::with_capacity(MAX_BYTE * MAX_BYTE * MAX_BYTE * MAX_BYTE);
 
-    for d in 1..=255{
-        for c in 1..=255{
-            for b in 1..=255{
-                for a in 1..=255{
+    for d in 0x1..=0xFF{
+        for c in 0x1..=0xFF{
+            for b in 0x1..=0xFF{
+                for a in 0x1..=0xFF{
                     ip_list.push(std::format!("{}.{}.{}.{}", a, b, c, d));
                 }
             }
@@ -119,7 +119,7 @@ async fn application(_start_ip: Option<&str>) -> (){
     let ip_list: Vec<String>;
     if let Some(start_ip) = _start_ip{
         ip_list = get_ip_list(Some(start_ip));
-    }else{ 
+    }else{
         ip_list = get_ip_list(None);
     }
 
